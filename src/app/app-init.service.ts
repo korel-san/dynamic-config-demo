@@ -10,7 +10,7 @@ export class AppInitService {
   // Important: It should return a Promise
   public init() {
     return from(
-      fetch('assets/app-config.json').then(function (response) {
+      fetch('assets/app-config.json').then((response) => {
         return response.json();
       })
     ).pipe(
